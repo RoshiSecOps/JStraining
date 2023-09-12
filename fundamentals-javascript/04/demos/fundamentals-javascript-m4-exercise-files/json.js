@@ -10,24 +10,26 @@ let employee = {
   salary: 100000
 };
 
-// Convert to JSON String
+// Convert to JSON string
 let jsonValue = JSON.stringify(employee);
 console.log(jsonValue);
-jsonValue = JSON.stringify(employee, null, 2);
+
+// Re-stringify
+jsonValue=JSON.stringify(employee, null, 2);
 console.log(jsonValue);
 
-// Convert Value Back to Object
+// Convert Value Back to object
 let newEmployee = JSON.parse(jsonValue);
 console.log(newEmployee);
 
-// Writing JSON Directly
+// Writing JSON directly
 let jsonString = `{
-  "firstName": "Elizabeth",
-  "lastName": "Jones"
+  "firstName": "Bobo",
+  "lastName": "Pi"
 }`;
 let obj = JSON.parse(jsonString);
 console.log(obj);
 
 // Improperly formatted JSON
-let notJSON = "hello!";
-let newObj = JSON.parse(notJSON);
+//let notJSON = "hello!";
+//let newobj = JSON.parse(notJSON);
