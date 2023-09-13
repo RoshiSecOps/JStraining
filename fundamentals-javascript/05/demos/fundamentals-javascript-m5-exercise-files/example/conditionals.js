@@ -30,12 +30,12 @@ if(employee.numYearsService > 5 && employee.department === "Engineering") {
   console.log(`Employee meets criteria`);
 }
 
-// Evaluating multiple conditions for truthyness in one or more conditions 
+// Evaluating multiple conditions
 if(employee.numYearsService > 10 || employee.title.startsWith("VP")) {
   console.log(`Employee meets criteria`);
 }
 
-// Evaluating for a condition to NOT be true
+// Evaluating to not be true
 if(employee.numYearsService > 20 && !employee.isActive) {
   console.log(`Employee is retired with full retirement benefit`);
 }
@@ -47,4 +47,5 @@ if(employee.numYearsService > 10) {
   employee.annualBonus = 500;
 }
 
-employee.annualBonus = (employee.numYearsService > 10) ? 1000 : 500;
+employee.annualBonus = (employee.numYearsService >10) ? 1000 : 500;
+console.log(employee.annualBonus)

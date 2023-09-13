@@ -1,10 +1,11 @@
 // Simply function to log out truthyness
+
 const isTruthy = (name, exp) => {
   console.log(`${name}: ${Boolean(exp)}`);
 }
 
 // Numbers
-isTruthy("val1", 0);
+isTruthy("val1",0);
 isTruthy("val2", 1);
 isTruthy("val3", -1);
 isTruthy("val4", NaN);
@@ -25,4 +26,5 @@ isTruthy("val12", {});
 
 // Undefined variables
 let var1;
-isTruthy("val13", var1);
+isTruthy("val13",var1);
+
